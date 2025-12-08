@@ -58,3 +58,15 @@ button {
 
 
 }
+
+@media (max-width: 768px) {
+    .home-cont {
+        flex-direction: column;
+    }
+    img {
+        height: 465px;
+    }
+    .top-txt {
+        display: none;
+    }
+}
