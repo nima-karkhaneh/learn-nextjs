@@ -8,7 +8,7 @@ export default function Home() {
           <p className="btm-txt">Join our community of creators and explore a vast library of user-submitted models.</p>
           <button>Browse models</button>
         </aside>
-        <img src="/hero-image.png" alt="" />
+        <img src="/hero-image.png" alt="home image" className="home-img" />
     </main>
   )
 }

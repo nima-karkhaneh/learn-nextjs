@@ -10,6 +10,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <header>
+          <div className="logo">
+            <img src="/printforge-logo.svg" alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+            </ul>
+          </nav>
+        </header>
         {children}
       </body>
     </html>

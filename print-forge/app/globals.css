@@ -1,5 +1,25 @@
 @import "tailwindcss";
 
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 0 10px;
+}
+
+
+.logo {
+    width: 200px;
+}
+
+ul {
+    display:flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+}
+
 .home-cont {
     display: flex;
     justify-content: center;
@@ -16,8 +36,8 @@
 }
 
 
-img {
-    height: 730px;
+.home-img {
+    height: 500px;
 }
 
 .top-txt {
