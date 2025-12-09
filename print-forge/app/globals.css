@@ -50,17 +50,14 @@ ul {
 
 
 h1 {
-    font-family: Montserrat Alternates;
-    font-weight: 700;
+    font-family: var(--font-montserrat-alternates);
     font-style: Bold;
+    font-weight: 600;
     font-size: 56px;
-    line-height: 100%;
-    letter-spacing: 0%;
 
 }
 
 .btm-txt {
-    font-family: Albert Sans;
     font-weight: 400;
     font-style: Regular;
     font-size: 28px;
