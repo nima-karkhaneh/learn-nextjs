@@ -4,6 +4,7 @@ import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
 import Image from "next/image";
 import NavIcon from "@/public/printforge-logo.svg"
+import Link from "next/link";
 
 
 const alberSans = Albert_Sans({
@@ -29,12 +30,12 @@ export default function RootLayout({
       <body className={`${alberSans.className} ${montserratAlternates.variable}`}>
         <header>
           <div className="logo">
-            <Image src={NavIcon} alt="logo" />
+            <Link href="/"><Image src={NavIcon} alt="logo" /></Link>
           </div>
           <nav>
             <ul>
-              <li>Home</li>
-              <li>About</li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/about">About</Link></li>
             </ul>
           </nav>
         </header>
