@@ -2,6 +2,8 @@
 import { subscribe } from "diagnostics_channel";
 import "./globals.css";
 import { Albert_Sans, Montserrat_Alternates } from "next/font/google"
+import Image from "next/image";
+import NavIcon from "@/public/printforge-logo.svg"
 
 
 const alberSans = Albert_Sans({
@@ -27,7 +29,7 @@ export default function RootLayout({
       <body className={`${alberSans.className} ${montserratAlternates.variable}`}>
         <header>
           <div className="logo">
-            <img src="/printforge-logo.svg" alt="logo" />
+            <Image src={NavIcon} alt="logo" />
           </div>
           <nav>
             <ul>

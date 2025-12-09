@@ -1,4 +1,8 @@
 import Image from "next/image";
+import HeroImage from "../public/hero-image-square.png"
+
+
+
 export default function Home() {
   return (
     <main className="home-cont">
@@ -8,7 +12,7 @@ export default function Home() {
           <p className="btm-txt">Join our community of creators and explore a vast library of user-submitted models.</p>
           <button>Browse models</button>
         </aside>
-        <img src="/hero-image.png" alt="home image" className="home-img" />
+        <Image src={HeroImage} alt="home image" className="home-img" />
     </main>
   )
 }
