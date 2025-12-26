@@ -20,6 +20,10 @@ ul {
     gap: 10px;
 }
 
+.models {
+    display: block;
+}
+
 .home-cont {
     display: flex;
     justify-content: center;
