@@ -1,3 +1,4 @@
+import { promises } from "dns"
 import type { ReactNode } from "react"
 
 // Data Types
@@ -10,6 +11,22 @@ export type Model = {
   category: string
   dateAdded: string
 }
+
+export type Category = {
+    displayName: string
+    slug: string
+}
+
+export type CategoriesData = {
+    categories: Category[]
+}
+
+export type CategoryPageProps = {
+  params: Promise<{
+    categoryName: string
+  }>
+}
+
 
 // Page Types
 export type RootLayoutProps = Readonly<{
@@ -25,6 +42,11 @@ export type ModelDetailPageProps = {
 // Components Types
 export type ModelCardProps = {
     model: Model
+}
+
+export type ModelsGridProps = {
+    title: string
+    models: Model[]
 }
 
 export type PillProps = {
