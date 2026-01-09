@@ -1,10 +1,11 @@
+import { getCategoryBySlug } from "@/app/lib/categories"
 import { CategoryPageProps } from "@/app/types"
 
 
-export default async function categoryPage ({ params } : CategoryPageProps) {
-    console.log({ params })
+export default async function categoryPage ({ params }: CategoryPageProps) {
     const { categoryName } = await params
+    const category = getCategoryBySlug(categoryName)
     return(
-        <h1>{categoryName}</h1>
+        <h1>{category.displayName}</h1>
     )
 }
