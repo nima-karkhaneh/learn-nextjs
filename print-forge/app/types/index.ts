@@ -59,3 +59,7 @@ export type NavLinkProps = {
   href: string,
   isActive: boolean
 }
+
+export type GetModelsParams = {
+    category?: string
+}
