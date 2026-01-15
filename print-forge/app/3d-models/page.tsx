@@ -1,6 +1,8 @@
+import Form from "next/form"
 import ModelsGrid from "@/app/components/ModelsGrid"
 import { getModels } from "../lib/models"
 import { ModelsPageProps } from "../types"
+import next from "next"
 
 
 
@@ -21,14 +23,14 @@ export default async function Page({ searchParams }: ModelsPageProps) {
 
     return(
         <>
-        <form>
+        <Form action="/3d-models">
             <input 
             type="text" 
             name="query" 
             placeholder="Search for your model"
             defaultValue={query}
             className="w-full border border-gray-500 rounded caret-gray-900 px-2 py-2"/>
-        </form>
+        </Form>
         <ModelsGrid title="3D Models" models={filteredModels} />
         </>
     ) 
