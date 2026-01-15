@@ -39,6 +39,12 @@ export type ModelDetailPageProps = {
     }>
 }
 
+export type ModelsPageProps = {
+  searchParams: Promise<{
+    query: string
+  }>
+}
+
 // Components Types
 export type ModelCardProps = {
     model: Model
@@ -63,3 +69,5 @@ export type NavLinkProps = {
 export type GetModelsParams = {
     category?: string
 }
+
+
